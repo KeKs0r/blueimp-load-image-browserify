@@ -268,11 +268,8 @@
 
     if (typeof module !== 'undefined' && module.exports) {
         module.exports = loadImage;
-    } else if (typeof define === 'function' && define.amd) {
-        define(function () {
-            return loadImage;
-        });
-    } else {
+    } 
+    else {
         $.loadImage = loadImage;
     }
 }(this));
